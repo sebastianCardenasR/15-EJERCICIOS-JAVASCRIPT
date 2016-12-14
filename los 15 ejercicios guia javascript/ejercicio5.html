@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejercicio5</title>
+</head>
+<body>
+<script type="text/javascript">
+	function result(){
+		
+	var a=[15,170]
+
+	var b=[16,166]
+
+	var c=[17,175]
+
+	var d=[18,160]
+
+	var e=[19,178]
+     var estatura=document.getElementById('estatura').value
+	if (estatura=="a")
+	{
+
+		
+		alert("los alumnos que miden mas de 175 tienen --->(años,estatura): "+c+" y "+e)
+	}
+	else if (estatura=="b")
+	{
+	
+		alert("los alumnos que son mayores de 18 años  --->(años,estatura): "+d+" y "+e )
+	}
+	else if (estatura=="c")
+	{
+		
+		alert("los datos de los alumnos --->(años,estatura): "+a+" y "+b+" y "+c+" y "+d+" y "+e)
+	}
+	};
+
+</script>
+<ul>
+	<li>escriba A si quiere ver los datos de los alumnos que midan mas de 1.75m</li>
+	<li>escriba B si quiere ver los datos de los alumnos que tienen una edad mayor a 18</li>
+	<li>escriba C si quiere ver todos los datos de los alumnos</li>
+</ul>
+<p> escriba la edad o estatura requerida:
+<input type="text" id="estatura">
+</p>
+<button onclick="result()">analisar</button>
+</body>
+</html>

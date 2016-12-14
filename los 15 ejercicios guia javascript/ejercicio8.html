@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A08</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="focus.js"></script>
+	<script type="text/javascript">
+		function mili() {
+			var num = document.getElementById('milimetros').value
+			var milla = 1.609340;
+			var result = num * milla;
+			alert(num + "  Millas son: " + result + "  Milimetros");
+		};
+
+		function cm(){
+			var num = document.getElementById('centimetros').value
+			var centimetro = 160.934;
+			var result = num * centimetro;
+			alert(num + "  Millas son: " + result + "  Centimetros");
+		};
+
+		function mt(){
+            var num = document.getElementById('metros').value
+			var mts = 1.6093400;
+			var result = num * mts;
+			alert(num + "  Millas son: " + result + "  Metros");
+		};
+
+		function km(){
+			var num = document.getElementById('kilometros').value
+			var kms = 1.6093;
+			var result = num * kms;
+			alert(num + "  Millas son: " + result + "  Kilometros");
+		};
+
+		function yarda(){
+			var num = document.getElementById('yardas').value
+			var yrd = 1.7599903;
+			var result = num * yrd;
+			alert(num + "  Millas son: " + result + "  Yardas");
+		};
+
+		function pie(){
+			var num = document.getElementById('pies').value
+			var p = 5.2799870;
+			var result = num * p;
+			alert(num + "  Millas son: " + result + "  Pies");
+		};
+
+		function pulgada(){
+			var num = document.getElementById('pulgadas').value
+			var pulga = 63.3598767;
+			var result = num * pulga;
+			alert(num + "  Millas son: " + result + "  Pulgadas");
+		};
+	</script>
+	<style type="text/css">
+
+
+		h1{
+			color: red;
+		}
+
+		p{
+			color: #5B6CE8;
+		}
+
+		input{
+			background-color: #828282;
+		}
+
+	</style>
+</head>
+<body>
+<h1>Convertir</h1>
+<hr>
+<p>Convertir de millas a milimetros</p> 
+<input type="number" id="milimetros"> 
+<button onclick="mili()">Calcular</button>
+<hr>
+<p>Convertir de millas a centimetros</p> 
+<input type="number" id="centimetros">
+ <button onclick="cm()">Calcular</button>
+<hr>
+<p>Convertir de millas a metros</p> 
+<input type="number" id="metros"> 
+<button onclick="mt()">Calcular</button>
+<hr>
+<p>Convertir de millas a kilometros</p> 
+<input type="number" id="kilometros">
+<button onclick="km()">Calcular</button>
+<hr>
+<p>Convertir de millas a yardas</p> 
+<input type="number" id="yardas"> 
+<button onclick="yarda()">Calcular</button>
+<hr>
+<p>Convertir de millas a pies</p> 
+<input type="number" id="pies"> 
+<button onclick="pie()">Calcular</button>
+<hr>
+<p>Convertir de millas a pulgadas</p> 
+<input type="number" id="pulgadas"> 
+<button onclick="pulgada()">Calcular</button>
+</body>
+</html>

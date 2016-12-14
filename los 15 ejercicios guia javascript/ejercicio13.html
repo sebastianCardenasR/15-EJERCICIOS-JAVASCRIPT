@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejercicio13</title>
+</head>
+<body>
+<style type="text/css">
+	
+	div{
+		background-color: lightblue;
+		width: 500px;
+		height: 500px;
+		border-color: blue;
+	}
+
+	h1
+	{
+		color: blue;
+	}
+</style>
+
+<script type="text/javascript">
+	function factura(){
+		var codigo=document.getElementById('codigo').value
+		var cantidad=document.getElementById('cantidad').value
+		var precio=document.getElementById('precio').value
+
+		var costo=cantidad*precio;
+
+		alert("el producto con el codigo:  "+codigo+" tiene un costo de: "+costo)
+		
+
+		if(cantidad=="")
+		{
+			alert("por favor escriba la cantidad de litros que se va a vender")
+		}
+
+
+	}
+</script>
+
+<div align="center">
+<h1>factura de la tienda de desinfectantes el coquito</h1>
+	<p>codigo del producto: <input type="text" id="codigo"></p>
+	<p>digite la cantidad de litros que se van a vender: <input type="text" id="cantidad"></p>
+	<p>digite el precio de cada litro del desinfectante: <input type="text" id="precio"></p>
+	<button onclick="factura()">evaluar costo</button>
+</div>
+</body>
+</html>

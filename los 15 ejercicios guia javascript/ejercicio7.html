@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+    
+    <script type="text/javascript">  
+        
+         function escribe() {
+             var valor = document.formulario.km.value;
+             if (valor > 0)
+                 {
+                     var result = valor * 16.4;
+                     texto = document.getElementById("caja")
+                     texto.innerHTML =  result + " Litros";
+                 }else if( valor < 0)
+                     {
+                          texto = document.getElementById("caja")
+                     texto.innerHTML = "<br>Tienes que introducir un valor positivo";
+                     }else
+                 {
+                     texto = document.getElementById("caja")
+                     texto.innerHTML = "<br>Tienes que introducir un valor";
+                 }
+         }
+window.onload = function() {
+document.formulario.boton.onclick = escribe
+
+} 
+    </script>
+    <style type="text/css">
+    
+        #caja{
+            color: floralwhite;
+            background-color: dimgray;
+            font-size: 30px;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <form name="formulario">
+        <h3>Cuantos litros de gasolina gastara su vehiculo en un recorrido</h3>
+        <br>
+        <div>Digite el numero de Kilometros de Recorrido:</div>
+        <br>
+        <input type="text" name="km">
+        <br>
+        <br>
+        <input type="button" name="boton" value="Calcular Litros">
+        <br>
+    </form>
+    
+    <br><div>La cantidad de combustible que gastara seran </div><a id="caja" ></a>
+
+
+</body>
+</html>

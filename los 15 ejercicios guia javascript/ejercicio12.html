@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A012</title>
+	<script type="text/javascript">
+	    var numero;
+        function cargar(){
+             numero = Math.floor(Math.random() * 20);
+        };
+
+		function juego(){
+			var num = document.getElementById('n').value
+
+			if(num > 20){
+				alert("Numero fuera de rango");
+			} else if(num > numero){
+				alert("El numero ingresado es Mayor");
+			} else if(num < numero){
+				alert("El numero ingresado es Menor");
+			} else if(num == numero){
+			    alert("Felicitaciones, te has ganado una menta"); 
+			    numero = Math.floor(Math.random() * 20);
+			};
+		};
+	</script>
+</head>
+<body>
+<h1>Adivinar Numero</h1>
+<p>El juego consiste en adivinar un numero de 0 al 20.</p>
+<p>Una vez el numero sea adivinado se carga automaticamente el otro numero para adivinar</p>
+<p>Dar click en el boton Cargar para generar el numero para adivinar</p>
+<button onclick="cargar()">Cargar</button>
+<br>
+<br>
+<input type="number" id="n">
+<button onclick="juego()">Adivinar</button>
+</body>
+</html>

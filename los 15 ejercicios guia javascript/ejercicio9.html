@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ejercicio9</title>
+	<style type="text/css">
+div{ height: 100px; 
+margin: 10px;}
+
+	</style>
+</head>
+<body>
+<script type=" text/javascript">
+	function valor(){
+        var aa=document.getElementById('number3').value
+		if(aa=="con soldados")
+			{
+				var valor= document.getElementById('number1').value
+    var km=document.getElementById('number2').value
+    var costoKm= km*300;
+    var costo= valor+costoKm;
+    var costo1=(costo*5)/100;
+
+            alert("el valor de la cuota inicial es....."+costo1)
+
+			}
+			else 
+			{
+				alert("no cumple con los requerimientos....")
+			}
+		
+	};
+	
+
+</script>
+<h1 style="color: blue">tienda el lago</h1>
+<div style="background-color:lightblue" with="500px" height="500px"><p>el valor del computador es:<input type="text" id="number1">
+el valor en km es :
+<input type="text" id="number2">
+<SELECT id="number3"> 
+<OPTION >con soldados</OPTION>
+<OPTION >sin soldados</OPTION>
+
+</SELECT>
+<button onclick="valor()"> analizar</button> </div>
+
+</body>
+</html>
